@@ -18,7 +18,7 @@ import shutil # ...for rmtree function (for non empty directory).
 ###############################################################################
 
 def menu():
-    program_ascii_logo = """
+    program_ascii_logo_and_menu = """
 ██████╗░███████╗██╗██████╗░░██████╗
 ██╔══██╗╚════██║██║██╔══██╗██╔════╝
 ██████╔╝░░███╔═╝██║██████╔╝╚█████╗░
@@ -29,9 +29,7 @@ def menu():
 [ Nuri ACAR ] [ nuriacar.com ]
 
 [ RZIPS ] [ Recursive ZIP Suite ] [ v0.0.6 : 20201207232323 ]
-"""
 
-    program_menu = """
 [ Menu ]
 ===============================================================================
 .
@@ -51,8 +49,9 @@ def menu():
 ... 9. Exit
 ===============================================================================
 """
+
     clear_screen()
-    print("{}{}".format(program_ascii_logo, program_menu))
+    print("{}".format(program_ascii_logo_and_menu))
 
 ###############################################################################
 
